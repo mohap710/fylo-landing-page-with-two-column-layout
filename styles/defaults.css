@@ -1,0 +1,48 @@
+:root {
+  font-size: 62.5%;
+  --Very-Dark-Blue: #08054b;
+  --Desaturated-Blue: #585989;
+  --primary-color: #3065f8;
+  --cyan: #3c9f8f;
+  --Light-Grayish-Blue: #f6f6fe;
+  --Light-Gray: #bfbfbf;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+p,
+nav {
+  font-family: "Raleway", sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+input:focus {
+  outline: transparent;
+}
+input:focus:invalid {
+  border: 1px solid #c70101;
+}
+input:invalid::after {
+  content: "Please check your email";
+  color: #c70101;
+  padding: 1rem;
+}

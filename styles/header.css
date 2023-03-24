@@ -1,0 +1,9 @@
+nav {
+  padding: 3rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-logo {
+  width: 85px;
+}
