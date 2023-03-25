@@ -7,3 +7,28 @@ nav {
 nav .nav-logo {
   width: 85px;
 }
+.nav-items {
+  font-size: 1.6rem;
+  font-weight: 400;
+  display: flex;
+  gap: 1.7rem;
+}
+.nav-item:hover {
+  cursor: pointer;
+  color: var(--Desaturated-Blue);
+  transition: color ease-in 300ms;
+}
+@media (min-width: 1024px) {
+  nav {
+    padding: 4rem;
+  }
+  nav .nav-logo {
+    width: 100px;
+  }
+  nav .nav-items {
+    font-size: 1.8rem;
+    font-weight: 400;
+    justify-content: space-around;
+    width: 25%;
+  }
+}

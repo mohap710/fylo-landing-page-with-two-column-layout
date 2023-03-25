@@ -1,14 +1,3 @@
-.nav-items {
-  font-size: 1.6rem;
-  font-weight: 400;
-  display: flex;
-  gap: 1.7rem;
-}
-.nav-item:hover {
-  cursor: pointer;
-  color: var(--Desaturated-Blue);
-  transition: color ease-in 300ms;
-}
 input {
   width: 100%;
   padding: 1.5rem;
@@ -40,7 +29,7 @@ section {
   padding: 6rem 3.5rem;
   color: var(--Very-Dark-Blue);
 }
-section > img {
+.illustration {
   width: 100%;
   margin-bottom: 5rem;
 }
@@ -60,7 +49,7 @@ section > img {
   line-height: 1.5;
   font-weight: lighter;
 }
-.hero > .section-title {
+.hero .section-title {
   font-size: 2.3rem;
 }
 .hero > .section-caption {
@@ -84,7 +73,7 @@ section > img {
   padding: 0;
 }
 
-.testimonial > .section-caption {
+.testimonial .section-caption {
   font-size: 1.4rem;
   margin-block: 1rem;
   margin-inline: -1rem;
@@ -158,6 +147,12 @@ form.sign-up {
 
 /* Desktop Design */
 @media (min-width: 1024px) {
+  .col-lg-75 {
+    width: 75%;
+  }
+  .col-lg-60 {
+    width: 60%;
+  }
   .col-lg-50 {
     width: 50%;
   }
@@ -177,7 +172,7 @@ form.sign-up {
     text-align: left;
   }
   .section-title {
-    font-size: 2.2rem;
+    font-size: 3.2rem;
   }
   .section-caption {
     font-size: 1.6rem;
@@ -186,5 +181,59 @@ form.sign-up {
   .btn-primary {
     width: 40%;
     float: left;
+  }
+  .hero input {
+    margin-block: 0;
+  }
+  .hero form {
+    margin-top: 4.5rem;
+    padding-inline: 0;
+  }
+  .hero .section-title {
+    font-size: 3.5rem;
+  }
+  .illustration-container {
+    background-image: url("../images/bg-curve-desktop.svg");
+    height: 85px;
+  }
+  .flex {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .flex-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-inline: 4rem;
+  }
+  .testimonial .section-caption {
+    font-size: 1.6rem;
+    margin-inline: 0;
+    opacity: 1;
+  }
+  .illustration {
+    width: 40%;
+    margin-bottom: 0;
+    object-fit: contain;
+  }
+  .testimonial-card {
+    max-width: 45%;
+  }
+  .testimonial-card > p {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+  .name {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .link {
+    text-align: start;
+  }
+  .link > a {
+    font-size: 1.4rem;
+  }
+  .link img {
+    width: 20px;
   }
 }
