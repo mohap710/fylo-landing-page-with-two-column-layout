@@ -36,7 +36,7 @@ section {
 .section-title {
   font-size: 1.8rem;
   text-align: center;
-  margin-block: 0 2.5rem;
+  margin-block: 2.5rem;
 }
 .pre-footer {
   background-color: var(--Desaturated-Blue);
@@ -162,6 +162,7 @@ form.sign-up {
   .col-lg-40 {
     width: 40%;
   }
+
   .pre-footer {
     display: flex;
     justify-content: space-around;
@@ -215,6 +216,10 @@ form.sign-up {
     width: 40%;
     margin-bottom: 0;
     object-fit: contain;
+  }
+  .hero .illustration {
+    width: 45%;
+    margin-top: 8%;
   }
   .testimonial-card {
     max-width: 45%;
